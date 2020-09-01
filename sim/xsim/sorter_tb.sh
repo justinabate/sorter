@@ -58,7 +58,7 @@ elaborate()
 # RUN_STEP: <simulate>
 simulate()
 {
-  xsim sorter_tb -key {Behavioral:sim_1:Functional:sorter_tb} -tclbatch cmd.tcl -log simulate.log
+  xsim sorter_tb -gui -key {Behavioral:sim_1:Functional:sorter_tb} -tclbatch cmd.tcl -log simulate.log
 }
 
 # STEP: setup
