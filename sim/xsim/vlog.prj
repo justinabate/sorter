@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../hdl/sorter.v" \
+"../../hdl/behav/axi_stream_mst.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

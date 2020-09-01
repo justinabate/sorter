@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sorter_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sorter_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="400001fs"></ZoomEndTime>
+      <Cursor1Time time="360000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="201"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="group215">
+      <obj_property name="label">axi_mst</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/sorter_tb/inst_axi_mst/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorter_tb/inst_axi_mst/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorter_tb/inst_axi_mst/stream_trig">
+         <obj_property name="ElementShortName">stream_trig</obj_property>
+         <obj_property name="ObjectShortName">stream_trig</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorter_tb/inst_axi_mst/dout">
+         <obj_property name="ElementShortName">dout[63:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorter_tb/inst_axi_mst/vld">
+         <obj_property name="ElementShortName">vld</obj_property>
+         <obj_property name="ObjectShortName">vld</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorter_tb/inst_axi_mst/sof">
+         <obj_property name="ElementShortName">sof</obj_property>
+         <obj_property name="ObjectShortName">sof</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorter_tb/inst_axi_mst/eof">
+         <obj_property name="ElementShortName">eof</obj_property>
+         <obj_property name="ObjectShortName">eof</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group37">
+         <obj_property name="label">internal</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/sorter_tb/inst_axi_mst/fsm_cs">
+            <obj_property name="ElementShortName">fsm_cs[2:0]</obj_property>
+            <obj_property name="ObjectShortName">fsm_cs[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/sorter_tb/inst_axi_mst/axis_wrcnt">
+            <obj_property name="ElementShortName">axis_wrcnt[2:0]</obj_property>
+            <obj_property name="ObjectShortName">axis_wrcnt[2:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group113">
+      <obj_property name="label">dut</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/sorter_tb/sorter_dut/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorter_tb/sorter_dut/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorter_tb/sorter_dut/din">
+         <obj_property name="ElementShortName">din[63:0]</obj_property>
+         <obj_property name="ObjectShortName">din[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorter_tb/sorter_dut/vld">
+         <obj_property name="ElementShortName">vld</obj_property>
+         <obj_property name="ObjectShortName">vld</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorter_tb/sorter_dut/sof">
+         <obj_property name="ElementShortName">sof</obj_property>
+         <obj_property name="ObjectShortName">sof</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorter_tb/sorter_dut/eof">
+         <obj_property name="ElementShortName">eof</obj_property>
+         <obj_property name="ObjectShortName">eof</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorter_tb/sorter_dut/lvl1">
+         <obj_property name="ElementShortName">lvl1[63:0]</obj_property>
+         <obj_property name="ObjectShortName">lvl1[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorter_tb/sorter_dut/lvl2">
+         <obj_property name="ElementShortName">lvl2[63:0]</obj_property>
+         <obj_property name="ObjectShortName">lvl2[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorter_tb/sorter_dut/lvl3">
+         <obj_property name="ElementShortName">lvl3[63:0]</obj_property>
+         <obj_property name="ObjectShortName">lvl3[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorter_tb/sorter_dut/lvl4">
+         <obj_property name="ElementShortName">lvl4[63:0]</obj_property>
+         <obj_property name="ObjectShortName">lvl4[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorter_tb/sorter_dut/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorter_tb/sorter_dut/fsm_cs">
+         <obj_property name="ElementShortName">fsm_cs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">fsm_cs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group119">
+         <obj_property name="label">internal</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/sorter_tb/sorter_dut/lvl1_1ff">
+            <obj_property name="ElementShortName">lvl1_1ff[63:0]</obj_property>
+            <obj_property name="ObjectShortName">lvl1_1ff[63:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/sorter_tb/sorter_dut/lvl2_1ff">
+            <obj_property name="ElementShortName">lvl2_1ff[63:0]</obj_property>
+            <obj_property name="ObjectShortName">lvl2_1ff[63:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/sorter_tb/sorter_dut/lvl3_1ff">
+            <obj_property name="ElementShortName">lvl3_1ff[63:0]</obj_property>
+            <obj_property name="ObjectShortName">lvl3_1ff[63:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/sorter_tb/sorter_dut/lvl4_1ff">
+            <obj_property name="ElementShortName">lvl4_1ff[63:0]</obj_property>
+            <obj_property name="ObjectShortName">lvl4_1ff[63:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/sorter_tb/sorter_dut/DATA_WIDTH">
+            <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+            <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/sorter_tb/sorter_dut/IDLE">
+            <obj_property name="ElementShortName">IDLE[3:0]</obj_property>
+            <obj_property name="ObjectShortName">IDLE[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/sorter_tb/sorter_dut/COMP1">
+            <obj_property name="ElementShortName">COMP1[3:0]</obj_property>
+            <obj_property name="ObjectShortName">COMP1[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/sorter_tb/sorter_dut/COMP2">
+            <obj_property name="ElementShortName">COMP2[3:0]</obj_property>
+            <obj_property name="ObjectShortName">COMP2[3:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/sorter_tb/sorter_dut/COMP3">
+            <obj_property name="ElementShortName">COMP3[3:0]</obj_property>
+            <obj_property name="ObjectShortName">COMP3[3:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
