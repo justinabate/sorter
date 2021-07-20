@@ -1,4 +1,0 @@
-sorter.v,verilog,xil_defaultlib,../../hdl/sorter.v,
-axi_stream_mst.v,verilog,xil_defaultlib,../../hdl/behav/axi_stream_mst.v,
-sorter_tb.vhd,vhdl,xil_defaultlib,../../hdl/behav/sorter_tb.vhd,
-glbl.v,Verilog,xil_defaultlib,glbl.v

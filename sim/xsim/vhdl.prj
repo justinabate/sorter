@@ -1,4 +1,0 @@
-vhdl xil_defaultlib  \
-"../../hdl/behav/sorter_tb.vhd" \
-
-nosort
