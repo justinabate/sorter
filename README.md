@@ -1,3 +1,5 @@
+[![Commits](https://img.shields.io/badge/dynamic/json.svg?label=commits&url=https://raw.githubusercontent.com/justinabate/sorter/master/jenkins/badges.json&query=commits&colorB=brightgreen)](https://github.com/justinabate/sorter/commits/master)
+
 # sorter
 Verilog implementation of an AXIS number sorter
 
@@ -15,3 +17,4 @@ Simulatuion passed with DATA_WIDTH 16, 32, and 64.
 
 
 : Vivado 2019.2 on Ubuntu 18.04.4 LTS
+
