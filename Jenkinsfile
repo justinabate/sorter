@@ -5,7 +5,7 @@ pipeline {
 
     stage('run_xsim') {
       steps {
-        sh 'echo "running jenkins :~)" '
+        sh 'echo "running jenkins :~~)" '
 	sh 'cd sim/xsim && ./test_runner.sh'
         // Command 2
         // Etc.
