@@ -1,3 +1,5 @@
+[![Commits](https://img.shields.io/badge/dynamic/json.svg?label=commits&url=https://raw.githubusercontent.com/justinabate/sorter/master/jenkins/badges.json&query=commits&colorB=brightgreen)](https://github.com/justinabate/sorter/commits/master)
+
 # sorter
 Verilog implementation of an AXIS number sorter
 
