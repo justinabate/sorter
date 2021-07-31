@@ -3,12 +3,15 @@ pipeline {
   
   stages {
 
-    stage('run_xsim') {
+    stage('xsim') {
       steps {
-        sh 'echo "running jenkins :~~~)" '
-	sh 'cd sim/xsim && ./test_runner.sh'
-        // Command 2
-        // Etc.
+        sh '''
+        echo "running jenkins :~)"
+        source /opt/Xilinx/Vivado/2021.1/settings64.sh
+	      cd sim/xsim
+        ./test_runner.sh
+        '''
+
       }
     }
 
@@ -17,10 +20,12 @@ pipeline {
   post {
     failure {
       emailext attachLog: true,
-      body: '''Project name: $PROJECT_NAME
-Build number: $BUILD_NUMBER
-Build Status: $BUILD_STATUS
-Build URL: $BUILD_URL''',
+      body: '''
+      Project name: $PROJECT_NAME
+      Build number: $BUILD_NUMBER
+      Build Status: $BUILD_STATUS
+      Build URL: $BUILD_URL
+      ''',
       recipientProviders: [culprits()],
       subject: 'Project \'$PROJECT_NAME\' is broken'
     }
