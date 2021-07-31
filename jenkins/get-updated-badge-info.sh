@@ -12,7 +12,9 @@
 #    https://medium.com/@iffi33/adding-custom-badges-to-gitlab-a9af8e3f3569
 #
 
-jenkins_API_token=$(cat ./api_token.txt)
+cur_dir=$(dirname -- $(readlink -fn -- "$0"))
+
+jenkins_API_token=$(cat $cur_dir/api_token.txt)
 
 # fetch jenkins pipeline status
 pipeline_json=$(curl -sX GET http://localhost:8080/job/test_pipeline/api/json --user admin:$jenkins_API_token)
@@ -30,9 +32,9 @@ fi
 
 
 # fetch git commit status
-commits=`git rev-list --all --count`
+commits=$(($(git rev-list --all --count) + 1))
 
 # latest_release_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
 # echo "{\"commits\":\"$commits\", \"release_tag"\:\"$latest_release_tag\"}" > badges.json
-echo "{\"build\":\"$build\", \"commits\":\"$commits\"}" > ./badges.json
+echo "{\"build\":\"$build\", \"commits\":\"$commits\"}" > $cur_dir/badges.json
 echo "set code repository badge status"
