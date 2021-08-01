@@ -3,15 +3,12 @@ pipeline {
   
   stages {
 
-    stage('xsim') {
+    stage('vsim') {
       steps {
+        deleteDir() // clean up workspace
         sh '''
-        echo "running jenkins :~)"
-        source /opt/Xilinx/Vivado/2021.1/settings64.sh
-	      cd sim/xsim
-        ./test_runner.sh
+        make vsim
         '''
-
       }
     }
 
