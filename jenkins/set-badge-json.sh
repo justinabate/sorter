@@ -20,14 +20,14 @@ jenkins_API_token=$(cat $cur_dir/api_token.txt)
 pipeline_json=$(curl -sX GET http://localhost:8080/job/test_pipeline/api/json --user admin:$jenkins_API_token)
 last_build=$(echo "$pipeline_json" | jq '.lastBuild .number')
 
-# fetch last build status
+# fetch last vsim status
 build_json=$(curl -sX GET http://localhost:8080/job/test_pipeline/$last_build/api/json --user admin:$jenkins_API_token)
 jenkins_build_status=$(echo "$build_json" | jq '.result')
 
 if [ $jenkins_build_status == '"SUCCESS"' ]; then
-    build="passing"
+    vsim="passing"
 else
-    build="failing"
+    vsim="failing"
 fi
 
 
@@ -36,5 +36,5 @@ commits=$(($(git rev-list --all --count) + 1))
 
 # latest_release_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
 # echo "{\"commits\":\"$commits\", \"release_tag"\:\"$latest_release_tag\"}" > badges.json
-echo "{\"build\":\"$build\", \"commits\":\"$commits\"}" > $cur_dir/badges.json
+echo "{\"vsim\":\"$vsim\", \"commits\":\"$commits\"}" > $cur_dir/badges.json
 echo "set code repository badge status"

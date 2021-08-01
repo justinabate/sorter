@@ -1,6 +1,6 @@
 [//]: # (call to https://shields.io/endpoint)
-[![Jenkins](https://img.shields.io/badge/dynamic/json.svg?label=build&url=https://raw.githubusercontent.com/justinabate/sorter/master/jenkins/badges.json&query=build&colorB=success)](https://github.com/justinabate/sorter/commits/master)
-[![Commits](https://img.shields.io/badge/dynamic/json.svg?label=commits&url=https://raw.githubusercontent.com/justinabate/sorter/master/jenkins/badges.json&query=commits&colorB=brightgreen)](https://github.com/justinabate/sorter/commits/master)
+[![Jenkins vsim](https://img.shields.io/badge/dynamic/json.svg?label=vsim&url=https://raw.githubusercontent.com/justinabate/sorter/master/jenkins/badges.json&query=vsim&colorB=success)](https://github.com/justinabate/sorter/commits/master)
+[![Git Commits](https://img.shields.io/badge/dynamic/json.svg?label=commits&url=https://raw.githubusercontent.com/justinabate/sorter/master/jenkins/badges.json&query=commits&colorB=brightgreen)](https://github.com/justinabate/sorter/commits/master)
 
 
 # sorter
