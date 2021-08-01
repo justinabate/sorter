@@ -5,7 +5,7 @@ pipeline {
 
     stage('vsim') {
       steps {
-        deleteDir() // clean up workspace
+        // deleteDir() // clean up workspace
         sh '''
         make vsim
         '''
